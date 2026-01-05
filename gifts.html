@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600&display=swap">
+
+  <title>Unwrap Slowly 🖤</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="center">
+
+  <h1>Unwrap Gently 🖤</h1>
+  <p>Some things are meant to be opened slowly ✨</p>
+
+  <div class="gift-row">
+    <div class="gift active" onclick="openGift(0)">🎁</div>
+    <div class="gift" onclick="openGift(1)">🎁</div>
+    <div class="gift" onclick="openGift(2)">🎁</div>
+    <div class="gift" onclick="openGift(3)">🎁</div>
+  </div>
+
+  <button onclick="location.href='final.html'">Last Page → 🖤</button>
+
+  <!-- MUSIC BUTTON (REQUIRED) -->
+  <button id="musicBtn" onclick="toggleMusic()">⏸ Pause Music</button>
+
+  <!-- GIFT POPUP -->
+  <div class="reveal" id="reveal">
+    <div class="card">
+      <img id="giftImg">
+      <p id="giftText"></p>
+      <button onclick="closeReveal()">Continue →</button>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="song" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- SCRIPT (LAST) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
